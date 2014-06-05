@@ -2,9 +2,22 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Example</title>
+    <link type="text/css" rel="stylesheet" href="FileOpener/FileOpener.css"/>
 </head>
 <body>
-
+    <div class="OpenFiles"></div>
 </body>
+    <script src="FileOpener/FileOpener.js"></script>
+    <script>
+        var FileList = new $FileOpener({
+            RenderTo: document.querySelector('.OpenFiles'),
+            MimeTypes: ['audio/mp3', 'audio/acc'],
+            multiple: true,
+            list: true,
+            onActiveItemChanged: function (File) {
+                console.log(File);
+            }
+        })
+    </script>
 </html>

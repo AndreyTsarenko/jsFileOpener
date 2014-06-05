@@ -1,0 +1,23 @@
+.FileOpener {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+.FileInputContainer {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 20px;
+}
+.ListContainer .Item.active {
+    font-weight: bold;
+}
+.ListContainer .Item {
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+}
